@@ -50,9 +50,9 @@ function generateToken(user) {
     username: user.username
   };
   const options = {
-    expiresIn: '1d' // d=day h=hour
+    expiresIn: '1d'
   }
-  return jwt.sign(payload, secret, options) // returns valid token
+  return jwt.sign(payload, secret, options)
 }
 
 module.exports = router;
